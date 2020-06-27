@@ -14,7 +14,11 @@ class SpinnerWidget extends Component {
           width="100%"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          className={this.props.spinning === true ? "animate" : "pause-animate"}
+          className={
+            this.props.spinning === true || this.props.spinning === true
+              ? "animate"
+              : "pause-animate"
+          }
         >
           <circle
             className="outer_circle"
@@ -23,7 +27,9 @@ class SpinnerWidget extends Component {
             cy="50"
             style={{
               strokeDasharray: `${Math.ceil(
-                (this.props.value / 100) * this.maxFill
+                ((this.props.value === undefined ? 0 : this.props.value) /
+                  100) *
+                  this.maxFill
               )} ${this.maxFill}`,
             }}
           />
