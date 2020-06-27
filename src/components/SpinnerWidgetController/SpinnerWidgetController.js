@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./styles/main.css";
 
 class SpinnerWidgetController extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="spinner-widget-controls">
@@ -29,6 +25,8 @@ class SpinnerWidgetController extends Component {
             onInput={(event) => {
               this.props.onValueChange(event.target.value);
             }}
+            min="0"
+            max="100"
           ></input>
         </div>
       </div>

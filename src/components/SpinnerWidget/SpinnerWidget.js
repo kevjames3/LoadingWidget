@@ -4,6 +4,7 @@ import "./styles/widget.css";
 class SpinnerWidget extends Component {
   constructor(props) {
     super(props);
+    this.maxFill = 158;
   }
   render() {
     return (
@@ -14,10 +15,20 @@ class SpinnerWidget extends Component {
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
           className={
-            this.props.spinning == "true" ? "animate" : "pause-animate"
+            this.props.spinning === "true" ? "animate" : "pause-animate"
           }
         >
-          <circle className="outer_circle" r="25" cx="50" cy="50" />.
+          <circle
+            className="outer_circle"
+            r="25"
+            cx="50"
+            cy="50"
+            style={{
+              strokeDasharray: `${Math.ceil(
+                (this.props.value / 100) * 158
+              )} 158`,
+            }}
+          />
           <circle className="inner_circle" r="40" cx="50" cy="50" />
         </svg>
         <div className="status">{this.props.value}%</div>
