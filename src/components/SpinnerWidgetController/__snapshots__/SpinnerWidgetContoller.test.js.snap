@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerWidgetContoller renders correctly 1`] = `
+<div
+  className="spinner-widget-controls"
+>
+  <div
+    className="button-controls"
+  >
+    <button
+      className=""
+      onClick={[Function]}
+    >
+      Keep Spinning
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Stop Spinning
+    </button>
+  </div>
+  <div
+    className="percentage-input"
+  >
+    <label>
+      Current percentage
+    </label>
+    <input
+      defaultValue={0}
+      max="100"
+      min="0"
+      onInput={[Function]}
+      type="Number"
+    />
+  </div>
+</div>
+`;

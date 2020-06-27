@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerWidget renders correctly 1`] = `
+<div
+  className="spinner_widget"
+>
+  <svg
+    className="pause-animate"
+    height="100%"
+    preserveAspectRatio="none"
+    viewBox="0 0 100 100"
+    width="100%"
+  >
+    <circle
+      className="outer_circle"
+      cx="50"
+      cy="50"
+      r="25"
+      style={
+        Object {
+          "strokeDasharray": "NaN 158",
+        }
+      }
+    />
+    <circle
+      className="inner_circle"
+      cx="50"
+      cy="50"
+      r="45"
+    />
+  </svg>
+  <div
+    className="status"
+  >
+    0
+    %
+  </div>
+</div>
+`;

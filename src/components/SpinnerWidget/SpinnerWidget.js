@@ -23,13 +23,15 @@ class SpinnerWidget extends Component {
             cy="50"
             style={{
               strokeDasharray: `${Math.ceil(
-                (this.props.value / 100) * 158
-              )} 158`,
+                (this.props.value / 100) * this.maxFill
+              )} ${this.maxFill}`,
             }}
           />
           <circle className="inner_circle" r="45" cx="50" cy="50" />
         </svg>
-        <div className="status">{this.props.value}%</div>
+        <div className="status">
+          {this.props.value === undefined ? 0 : this.props.value}%
+        </div>
       </div>
     );
   }
