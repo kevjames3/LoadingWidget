@@ -12,9 +12,9 @@ class Demo extends Component {
   }
 
   onSpinningChange = (shouldSpin) => {
-    console.log(shouldSpin);
     this.setState({ spinning: shouldSpin });
   };
+
   onValueChange = (newVal) => {
     this.setState({ value: newVal });
   };
