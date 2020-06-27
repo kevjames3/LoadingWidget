@@ -7,7 +7,7 @@
   }
 }
 
-.spinner_widget {
+.spinner-widget {
   width: 165px;
   height: 165px;
   position: relative;
@@ -15,29 +15,29 @@
   display: inline-block;
 }
 
-.spinner_widget .status {
+.spinner-widget .status {
   position: relative;
   top: -69%;
   font-size: 3em;
   text-align: center;
 }
 
-.spinner_widget svg {
+.spinner-widget svg {
   background: #cdcdcd;
   border-radius: 50%;
   transform: rotate(-90deg);
   animation: rotation 2s infinite linear;
 }
 
-.spinner_widget svg.animate {
+.spinner-widget svg.animate {
   animation-play-state: running;
 }
 
-.spinner_widget svg.pause-animate {
+.spinner-widget svg.pause-animate {
   animation-play-state: paused;
 }
 
-.spinner_widget circle.outer_circle {
+.spinner-widget circle.outer_circle {
   fill: #cdcdcd;
   stroke: #409fff;
   stroke-width: 50;
@@ -45,6 +45,6 @@
   animation: fillup 5s linear infinite;
 }
 
-.spinner_widget circle.inner_circle {
+.spinner-widget circle.inner_circle {
   fill: white;
 }

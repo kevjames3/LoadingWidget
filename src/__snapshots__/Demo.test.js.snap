@@ -3,7 +3,7 @@
 exports[`Demo renders correctly 1`] = `
 Array [
   <div
-    className="spinner_widget"
+    className="spinner-widget"
   >
     <svg
       className="animate"

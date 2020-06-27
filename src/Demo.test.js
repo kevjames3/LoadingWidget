@@ -50,7 +50,7 @@ describe("Demo", () => {
     });
 
     let input = container.querySelector(".percentage-input input");
-    let displayedNumber = container.querySelector(".spinner_widget div.status");
+    let displayedNumber = container.querySelector(".spinner-widget div.status");
 
     expect(input).toHaveValue(0);
     expect(displayedNumber.textContent).toBe("0%");

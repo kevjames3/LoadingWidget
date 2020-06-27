@@ -8,7 +8,7 @@ class SpinnerWidget extends Component {
   }
   render() {
     return (
-      <div className="spinner_widget">
+      <div className="spinner-widget">
         <svg
           height="100%"
           width="100%"

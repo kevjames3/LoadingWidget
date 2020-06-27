@@ -2,7 +2,7 @@
 
 exports[`SpinnerWidget renders correctly 1`] = `
 <div
-  className="spinner_widget"
+  className="spinner-widget"
 >
   <svg
     className="pause-animate"
