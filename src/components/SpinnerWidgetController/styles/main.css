@@ -2,6 +2,7 @@
   margin-top: 5px;
 }
 
-.spinner-widget-controls label {
+.spinner-widget-controls label,
+.spinner-widget-controls button {
   margin-right: 5px;
 }

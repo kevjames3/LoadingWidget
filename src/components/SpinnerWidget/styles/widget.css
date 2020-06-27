@@ -1,9 +1,3 @@
-/* @keyframes fillup {
-  to {
-    stroke-dasharray: 158 158;
-  }
-} */
-
 @keyframes rotation {
   from {
     transform: rotate(0deg);

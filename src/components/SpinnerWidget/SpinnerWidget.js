@@ -14,9 +14,7 @@ class SpinnerWidget extends Component {
           width="100%"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          className={
-            this.props.spinning === "true" ? "animate" : "pause-animate"
-          }
+          className={this.props.spinning === true ? "animate" : "pause-animate"}
         >
           <circle
             className="outer_circle"
@@ -29,7 +27,7 @@ class SpinnerWidget extends Component {
               )} 158`,
             }}
           />
-          <circle className="inner_circle" r="40" cx="50" cy="50" />
+          <circle className="inner_circle" r="45" cx="50" cy="50" />
         </svg>
         <div className="status">{this.props.value}%</div>
       </div>

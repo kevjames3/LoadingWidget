@@ -6,19 +6,15 @@ class SpinnerWidgetController extends Component {
     return (
       <div className="spinner-widget-controls">
         <div>
-          <label>Spinning</label>
-          <select
-            onChange={(event) => {
-              this.props.onSpinningChange(event.target.value);
-            }}
-            defaultValue={this.props.spinning}
-          >
-            <option value={true}>Keep Spinning</option>
-            <option value={false}>Don't Spin</option>
-          </select>
+          <button onClick={() => this.props.onSpinningChange(true)}>
+            Keep Spinning
+          </button>
+          <button onClick={() => this.props.onSpinningChange(false)}>
+            Stop Spinning
+          </button>
         </div>
         <div>
-          <label>Current value</label>
+          <label>Current percentage</label>
           <input
             type="Number"
             defaultValue={this.props.value}
