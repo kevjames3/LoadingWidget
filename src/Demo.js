@@ -1,4 +1,3 @@
-import "./styles/App.css";
 import SpinnerWidget from "./components/SpinnerWidget/SpinnerWidget";
 import SpinnerWidgetController from "./components/SpinnerWidgetController/SpinnerWidgetController";
 import React, { Component } from "react";
