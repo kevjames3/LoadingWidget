@@ -28,13 +28,13 @@ See the below commands about running a demo yourself.
 Available commands
 
 - `npm start`
-  - start the project and to see a Demo
+  - Start the project and to see a Demo.
 - `npm test`
-  - run tests
+  - Run tests.
 - `npm run build`
   - Builds the app for production to the `build` folder.<br /> It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.<br /> See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 - `npm run test:debug`
-  - Run with the debugger. Visual studio Code can connect at this point
+  - Run with the debugger. Visual studio Code can connect at this point.
 
 ## Areas to Improve
 
