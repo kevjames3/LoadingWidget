@@ -33,7 +33,7 @@ class SpinnerWidget extends Component {
               )} ${this.maxFill}`,
             }}
           />
-          <circle className="inner_circle" r="45" cx="50" cy="50" />
+          <circle className="inner-circle" r="45" cx="50" cy="50" />
         </svg>
         <div className="status">
           {this.props.value === undefined ? 0 : this.props.value}%

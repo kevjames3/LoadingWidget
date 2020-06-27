@@ -23,7 +23,7 @@ exports[`SpinnerWidget renders correctly 1`] = `
       }
     />
     <circle
-      className="inner_circle"
+      className="inner-circle"
       cx="50"
       cy="50"
       r="45"

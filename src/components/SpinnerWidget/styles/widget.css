@@ -45,6 +45,6 @@
   animation: fillup 5s linear infinite;
 }
 
-.spinner-widget circle.inner_circle {
+.spinner-widget circle.inner-circle {
   fill: white;
 }
