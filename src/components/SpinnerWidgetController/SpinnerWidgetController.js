@@ -7,12 +7,15 @@ class SpinnerWidgetController extends Component {
       <div className="spinner-widget-controls">
         <div className="button-controls">
           <button
-            className=""
+            className="start-spinning"
             onClick={() => this.props.onSpinningChange(true)}
           >
             Keep Spinning
           </button>
-          <button onClick={() => this.props.onSpinningChange(false)}>
+          <button
+            className="stop-spinning"
+            onClick={() => this.props.onSpinningChange(false)}
+          >
             Stop Spinning
           </button>
         </div>

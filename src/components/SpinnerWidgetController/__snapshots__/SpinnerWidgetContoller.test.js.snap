@@ -8,12 +8,13 @@ exports[`SpinnerWidgetContoller renders correctly 1`] = `
     className="button-controls"
   >
     <button
-      className=""
+      className="start-spinning"
       onClick={[Function]}
     >
       Keep Spinning
     </button>
     <button
+      className="stop-spinning"
       onClick={[Function]}
     >
       Stop Spinning

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Demo renders correctly 1`] = `
+Array [
+  <div
+    className="spinner_widget"
+  >
+    <svg
+      className="animate"
+      height="100%"
+      preserveAspectRatio="none"
+      viewBox="0 0 100 100"
+      width="100%"
+    >
+      <circle
+        className="outer_circle"
+        cx="50"
+        cy="50"
+        r="25"
+        style={
+          Object {
+            "strokeDasharray": "0 158",
+          }
+        }
+      />
+      <circle
+        className="inner_circle"
+        cx="50"
+        cy="50"
+        r="45"
+      />
+    </svg>
+    <div
+      className="status"
+    >
+      0
+      %
+    </div>
+  </div>,
+  <hr />,
+  <div
+    className="spinner-widget-controls"
+  >
+    <div
+      className="button-controls"
+    >
+      <button
+        className="start-spinning"
+        onClick={[Function]}
+      >
+        Keep Spinning
+      </button>
+      <button
+        className="stop-spinning"
+        onClick={[Function]}
+      >
+        Stop Spinning
+      </button>
+    </div>
+    <div
+      className="percentage-input"
+    >
+      <label>
+        Current percentage
+      </label>
+      <input
+        defaultValue={0}
+        max="100"
+        min="0"
+        onInput={[Function]}
+        type="Number"
+      />
+    </div>
+  </div>,
+]
+`;
