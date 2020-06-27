@@ -1,0 +1,49 @@
+@keyframes fillup {
+  to {
+    stroke-dasharray: 158 158;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.spinner_widget {
+  width: 165px;
+  height: 165px;
+  position: relative;
+  margin: 7px;
+  display: inline-block;
+}
+
+.spinner_widget .status {
+  position: relative;
+  top: -69%;
+  font-size: 3em;
+  text-align: center;
+}
+
+.spinner_widget svg {
+  background: #cdcdcd;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  animation: rotation 2s infinite linear;
+  /*animation-play-state: paused; */
+}
+
+.spinner_widget circle.outer_circle {
+  fill: #cdcdcd;
+  stroke: #409fff;
+  stroke-width: 50;
+  stroke-dasharray: 0 158;
+  animation: fillup 5s linear infinite;
+}
+
+.spinner_widget circle.inner_circle {
+  fill: white;
+}
