@@ -42,6 +42,14 @@ Available commands
 - Make the loading bar smoothly transition between percentage values.
 - Upload this all to `npm`, have not done that yet
 
+## Good Resources I Found
+
+This is more of a bookmark for me, but helps remind me of cool resources I found as I went along...
+
+- [Create React App](https://create-react-app.dev/)
+- [React Test Utilities](https://reactjs.org/docs/test-utils.html)
+- [Test Render for Snapshots](https://reactjs.org/docs/test-renderer.html)
+
 ## Acknowledgements
 
 Built with [Create React App](https://create-react-app.dev/)
