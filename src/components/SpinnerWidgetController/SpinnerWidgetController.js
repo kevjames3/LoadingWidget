@@ -4,7 +4,6 @@ import "./styles/main.css";
 class SpinnerWidgetController extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
   }
 
   render() {
@@ -16,11 +15,10 @@ class SpinnerWidgetController extends Component {
             onChange={(event) => {
               this.props.onSpinningChange(event.target.value);
             }}
+            defaultValue={this.props.spinning}
           >
-            <option defaultValue value="true">
-              Keep Spinning
-            </option>
-            <option value="false">Don't Spin</option>
+            <option value={true}>Keep Spinning</option>
+            <option value={false}>Don't Spin</option>
           </select>
         </div>
         <div>

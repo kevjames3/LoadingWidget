@@ -8,7 +8,7 @@ class Demo extends Component {
     super();
     this.state = {
       value: 0,
-      spinning: true,
+      spinning: false,
     };
   }
 

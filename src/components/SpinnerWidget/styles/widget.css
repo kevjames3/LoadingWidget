@@ -33,7 +33,14 @@
   border-radius: 50%;
   transform: rotate(-90deg);
   animation: rotation 2s infinite linear;
-  /*animation-play-state: paused; */
+}
+
+.spinner_widget svg.animate {
+  animation-play-state: running;
+}
+
+.spinner_widget svg.pause-animate {
+  animation-play-state: paused;
 }
 
 .spinner_widget circle.outer_circle {
