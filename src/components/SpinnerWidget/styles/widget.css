@@ -37,7 +37,7 @@
   animation-play-state: paused;
 }
 
-.spinner-widget circle.outer_circle {
+.spinner-widget circle.outer-circle {
   fill: #cdcdcd;
   stroke: #409fff;
   stroke-width: 50;

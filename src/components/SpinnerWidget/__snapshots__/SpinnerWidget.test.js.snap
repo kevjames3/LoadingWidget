@@ -12,7 +12,7 @@ exports[`SpinnerWidget renders correctly 1`] = `
     width="100%"
   >
     <circle
-      className="outer_circle"
+      className="outer-circle"
       cx="50"
       cy="50"
       r="25"

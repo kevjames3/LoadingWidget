@@ -21,7 +21,7 @@ class SpinnerWidget extends Component {
           }
         >
           <circle
-            className="outer_circle"
+            className="outer-circle"
             r="25"
             cx="50"
             cy="50"

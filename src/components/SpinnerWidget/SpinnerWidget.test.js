@@ -19,7 +19,7 @@ describe("SpinnerWidget", () => {
   it("renders the correct value and the stroke array is correct", () => {
     const { getByText, container } = render(<SpinnerWidget value={55} />);
     expect(getByText(/%/i).textContent).toBe("55%");
-    expect(container.querySelector(`circle.outer_circle`)).toHaveStyle(
+    expect(container.querySelector(`circle.outer-circle`)).toHaveStyle(
       "stroke-dasharray: 87 158"
     );
   });
