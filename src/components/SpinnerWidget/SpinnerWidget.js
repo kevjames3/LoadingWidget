@@ -18,7 +18,7 @@ class SpinnerWidget extends Component {
           <circle className="outer_circle" r="25" cx="50" cy="50" />.
           <circle className="inner_circle" r="40" cx="50" cy="50" />
         </svg>
-        <div className="status">13%</div>
+        <div className="status">{this.props.value}%</div>
       </div>
     );
   }
