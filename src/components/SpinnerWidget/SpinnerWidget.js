@@ -4,7 +4,8 @@ import "./styles/widget.css";
 class SpinnerWidget extends Component {
   constructor(props) {
     super(props);
-    this.maxFill = 158;
+    this.radius = 45;
+    this.maxFill = Math.PI * 2 * this.radius;
   }
   render() {
     return (
@@ -22,7 +23,7 @@ class SpinnerWidget extends Component {
         >
           <circle
             className="outer-circle"
-            r="25"
+            r={this.radius}
             cx="50"
             cy="50"
             style={{
@@ -31,9 +32,12 @@ class SpinnerWidget extends Component {
                   100) *
                   this.maxFill
               )} ${this.maxFill}`,
+              display:
+                (this.props.value !== undefined && Number(this.props.value)) > 0
+                  ? undefined
+                  : "none",
             }}
           />
-          <circle className="inner-circle" r="45" cx="50" cy="50" />
         </svg>
         <div className="status">
           {this.props.value === undefined ? 0 : this.props.value}%

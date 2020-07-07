@@ -23,7 +23,7 @@
 }
 
 .spinner-widget svg {
-  background: #cdcdcd;
+  background: white;
   border-radius: 50%;
   transform: rotate(-90deg);
   animation: rotation 2s infinite linear;
@@ -38,10 +38,10 @@
 }
 
 .spinner-widget circle.outer-circle {
-  fill: #cdcdcd;
+  fill: white;
   stroke: #409fff;
-  stroke-width: 50;
-  stroke-dasharray: 0 158;
+  stroke-width: 5px;
+  stroke-linecap: round;
   animation: fillup 5s linear infinite;
 }
 
