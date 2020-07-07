@@ -4,7 +4,8 @@ import "./styles/widget.css";
 class SpinnerWidget extends Component {
   constructor(props) {
     super(props);
-    this.maxFill = 158;
+    this.radius = 45;
+    this.maxFill = Math.floor(Math.PI * 2 * this.radius);
   }
   render() {
     return (
@@ -14,15 +15,31 @@ class SpinnerWidget extends Component {
           width="100%"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
+          className="background-loading-bar"
+        >
+          <circle
+            className="background-circle"
+            r={this.radius}
+            cx="50"
+            cy="50"
+            style={{ strokeDasharray: `${this.maxFill} ${this.maxFill}` }}
+          />
+        </svg>
+        <svg
+          height="100%"
+          width="100%"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
           className={
-            this.props.spinning === true || this.props.spinning === true
+            "loading-bar " +
+            (this.props.spinning === true || this.props.spinning === true
               ? "animate"
-              : "pause-animate"
+              : "pause-animate")
           }
         >
           <circle
             className="outer-circle"
-            r="25"
+            r={this.radius}
             cx="50"
             cy="50"
             style={{
@@ -31,9 +48,12 @@ class SpinnerWidget extends Component {
                   100) *
                   this.maxFill
               )} ${this.maxFill}`,
+              display:
+                (this.props.value !== undefined && Number(this.props.value)) > 0
+                  ? undefined
+                  : "none",
             }}
           />
-          <circle className="inner-circle" r="45" cx="50" cy="50" />
         </svg>
         <div className="status">
           {this.props.value === undefined ? 0 : this.props.value}%

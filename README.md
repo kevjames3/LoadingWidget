@@ -38,7 +38,6 @@ Available commands
 
 ## Areas to Improve
 
-- Round out the edges of the loading bar.
 - Make the loading bar smoothly transition between percentage values.
 - Upload this all to `npm`, have not done that yet
 
