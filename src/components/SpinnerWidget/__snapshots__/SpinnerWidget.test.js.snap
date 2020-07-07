@@ -5,7 +5,26 @@ exports[`SpinnerWidget renders correctly 1`] = `
   className="spinner-widget"
 >
   <svg
-    className="pause-animate"
+    className="background-loading-bar"
+    height="100%"
+    preserveAspectRatio="none"
+    viewBox="0 0 100 100"
+    width="100%"
+  >
+    <circle
+      className="background-circle"
+      cx="50"
+      cy="50"
+      r={45}
+      style={
+        Object {
+          "strokeDasharray": "282 282",
+        }
+      }
+    />
+  </svg>
+  <svg
+    className="loading-bar pause-animate"
     height="100%"
     preserveAspectRatio="none"
     viewBox="0 0 100 100"
@@ -15,18 +34,13 @@ exports[`SpinnerWidget renders correctly 1`] = `
       className="outer-circle"
       cx="50"
       cy="50"
-      r="25"
+      r={45}
       style={
         Object {
-          "strokeDasharray": "0 158",
+          "display": "none",
+          "strokeDasharray": "0 282",
         }
       }
-    />
-    <circle
-      className="inner-circle"
-      cx="50"
-      cy="50"
-      r="45"
     />
   </svg>
   <div

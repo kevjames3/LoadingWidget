@@ -5,7 +5,7 @@ class SpinnerWidget extends Component {
   constructor(props) {
     super(props);
     this.radius = 45;
-    this.maxFill = Math.PI * 2 * this.radius;
+    this.maxFill = Math.floor(Math.PI * 2 * this.radius);
   }
   render() {
     return (
