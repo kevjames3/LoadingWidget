@@ -22,11 +22,17 @@
   text-align: center;
 }
 
-.spinner-widget svg {
-  background: white;
+.spinner-widget svg.loading-bar {
   border-radius: 50%;
   transform: rotate(-90deg);
   animation: rotation 2s infinite linear;
+}
+
+.spinner-widget svg.background-loading-bar {
+  position: absolute;
+  background: transparent;
+  border-radius: 50%;
+  transform: rotate(-90deg);
 }
 
 .spinner-widget svg.animate {
@@ -38,13 +44,15 @@
 }
 
 .spinner-widget circle.outer-circle {
-  fill: white;
+  fill: transparent;
   stroke: #409fff;
   stroke-width: 5px;
   stroke-linecap: round;
   animation: fillup 5s linear infinite;
 }
 
-.spinner-widget circle.inner-circle {
-  fill: white;
+.spinner-widget circle.background-circle {
+  fill: transparent;
+  stroke: #bbbbbb;
+  stroke-width: 5px;
 }

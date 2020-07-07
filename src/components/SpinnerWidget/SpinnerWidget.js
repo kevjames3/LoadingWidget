@@ -15,10 +15,26 @@ class SpinnerWidget extends Component {
           width="100%"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
+          className="background-loading-bar"
+        >
+          <circle
+            className="background-circle"
+            r={this.radius}
+            cx="50"
+            cy="50"
+            style={{ strokeDasharray: `${this.maxFill} ${this.maxFill}` }}
+          />
+        </svg>
+        <svg
+          height="100%"
+          width="100%"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
           className={
-            this.props.spinning === true || this.props.spinning === true
+            "loading-bar " +
+            (this.props.spinning === true || this.props.spinning === true
               ? "animate"
-              : "pause-animate"
+              : "pause-animate")
           }
         >
           <circle
